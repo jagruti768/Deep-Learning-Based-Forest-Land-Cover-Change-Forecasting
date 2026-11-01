@@ -42,26 +42,24 @@ lulc_forecast/
 │   └── molai/           raw Molai files (see Molai section)
 ├── outputs/             generated results, one sub-folder per area
 ├── src/
-│   ├── config.py                 all settings per forest (AREAS dict, 80/20 weights)
-│   ├── data_prep.py              reads tifs, fixes class codes, builds dataset.npz
-│   ├── prepare_molai.py          converts Molai colour pictures to class GeoTIFFs
-│   ├── inspect_tif.py            check class colour tables of a map
-│   ├── inspect_aux.py            check slope / elevation files
-│   ├── splits.py                 spatial block split (train / val / test)
-│   ├── features.py               neighbourhood features for Random Forest
-│   ├── metrics.py                OA, kappa, F1, change-only accuracy, Figure of Merit
-│   ├── plots.py                  figures
-│   ├── run_baselines.py          persistence + Random Forest baselines
-│   ├── models.py                 U-Net, per-pixel LSTM, ConvLSTM+U-Net (80/20 fusion)
-│   ├── dl_utils.py               patch dataset, augmentation, tiled prediction
+│   ├── config.py                 
+│   ├── data_prep.py              
+│   ├── prepare_molai.py          
+│   ├── inspect_tif.py            
+│   ├── inspect_aux.py            
+│   ├── splits.py                 
+│   ├── features.py               
+│   ├── metrics.py                
+│   ├── plots.py                  
+│   ├── run_baselines.py          
+│   ├── models.py                 
+│   ├── dl_utils.py               
 │   ├── train.py                  train a model
-│   ├── compare.py                compare all trained models on test blocks
-│   ├── report_model.py           per-class report for one model
-│   ├── make_report_tables.py     journal-style area and accuracy tables
-│   ├── predict_future.py         forecast the next map
-│   ├── export_tif.py             save predictions as coloured GeoTIFF
-│   └── build_dashboard_data.py   prepare layers for the dashboard
-├── dashboard/                    Streamlit app (planned)
+│   ├── compare.py                
+│   ├── report_model.py           
+│   ├── make_report_tables.py     
+│   ├── predict_future.py         
+│   ├── export_tif.py             
 ├── requirements.txt
 └── README.md
 ```
